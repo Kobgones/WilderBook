@@ -1,6 +1,35 @@
-POST http://localhost:3000/api/addSkill/8
+POST http://localhost:3000/api/addSkill
 Content-Type: application/json
 
 {
-  "skillName": "PHP"
+    "wilderName": "James Harden",
+    "skillName": "NodeJs"
 }
+
+###
+// add a wilder
+POST http://localhost:3000/api/wilder
+Content-Type: application/json
+
+{
+  "name": "James Harden"
+}
+
+###
+// get all wilders
+GET http://localhost:3000/api/wilder
+Content-Type: application/json
+
+###
+// update a wilder
+PUT http://localhost:3000/api/wilder/1
+Content-Type: application/json
+
+{
+  "name": "James Harden"
+}
+
+###
+// delete a wilder
+DELETE http://localhost:3000/api/wilder/7
+Content-Type: application/json

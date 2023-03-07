@@ -15,13 +15,13 @@ app.post("/api/wilder", wilderController.create);
 app.get("/api/wilder", wilderController.findAll);
 app.put("/api/wilder/:id", wilderController.update);
 app.delete("/api/wilder/:id", wilderController.delete);
-app.post("/api/addSkill/:id", wilderController.addSkill);
 
 app.get("/api/skill", skillController.findAll);
 app.post("/api/skill", skillController.create);
 app.put("/api/skill/:id", skillController.update);
 app.delete("/api/skill/:id", skillController.delete);
 
+app.post("/api/addSkill", wilderController.addSkill);
 
 app.get("*", (req, res) => {
   res.status(404).send("Maybe a mistake ?");
